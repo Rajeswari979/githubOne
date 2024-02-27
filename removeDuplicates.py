@@ -1,15 +1,8 @@
 str=input("enter the string")
-standard=[]
-#first=str[0]
-for i in range(0,len(str)+1):
-    if str[i]==str[i+1]:
-        pass
+removeDuplicates=""
+for i in str:
+    if i in removeDuplicates:
+        continue
     else:
-        standard=str[i]
-
-print(standard)       
-   
-
-
-
-
+        removeDuplicates+=i 
+print(removeDuplicates)        
