@@ -15,5 +15,5 @@ def func(word):
          
 
 for word in str:
-   print(func(word.lower()))
+   print("Letters are Removed : ",func(word))
        
