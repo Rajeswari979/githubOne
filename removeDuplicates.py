@@ -1,20 +1,11 @@
 sentance=input("enter the string : ")
 removeDuplicates=""
-str=sentance.split(' ')
-print(str)
 
-def removingCharacter(word1):
-     removeDuplicates=""
-     for i in word1:
-        if i in removeDuplicates:
-            continue
-        else:
-           removeDuplicates+=i 
-        #print("Duplicates are removed - ",removeDuplicates)
-        removed=removeDuplicates   
-        return removed  
+for letter in sentance:
+    if letter in removeDuplicates:
+        continue
+    else:
+        removeDuplicates += letter
 
-for word in str:
-    print(removingCharacter(word),end=" ")
-
+print("final string : ",removeDuplicates)
 
