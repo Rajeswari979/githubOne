@@ -1,13 +1,11 @@
-import sys
-
 parking_time=0
 for_1hour=100
 increment=150
 for_30min=75
 final_fee=0
 
-entry_time=float(input("Enter the entry time"))
-exit_time=float(input("Enter the exit time"))
+entry_time=float(input("Enter the entry time : "))
+exit_time=float(input("Enter the exit time : "))
 
 parking_time=exit_time-entry_time
 
@@ -16,7 +14,7 @@ if parking_time<=0.15:
 
 elif parking_time == 1:
     final_fee+=for_1hour
-    print(" need to pay ",final_fee,"rupees")
+    print(" Pay ",final_fee,"rupees")
 
 elif parking_time >1:
     final_fee=+for_1hour
