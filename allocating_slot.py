@@ -12,8 +12,7 @@ def select(select_row , select_col):
     global i
     if parking_lot[select_row][select_col] == 0:
         parking_lot[select_row][select_col]="booked"
-        
-         
+                 
 rows,cols=5,5
 i=0
 parking_lot=[[0 for i in range(rows)] for i in range(cols)]
