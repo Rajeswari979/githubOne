@@ -18,6 +18,13 @@ def mod(first_number,second_number):
 def floor_division(first_number,second_number):
     return int(first_number)//int(second_number)
 
+def option_check():
+    option=input("Do you want calculator for another operation? y/n : ")
+    if option.lower()=='y':
+            user_choice()
+    else:
+            sys.exit(0)
+
 
 def user_choice():
     print("\n 1.Addition \n 2.Subtraction \n 3.Multiplication \n 4.division \n 5.modularation \n 6.Floor division \n ")
@@ -29,62 +36,40 @@ def operations(choice):
         first_number=input("enter a 1st number")
         second_number=input("enter a 2nd number")
         answer=add(first_number,second_number)
-
         print(f"{first_number} + {second_number} = {answer}")
-        option=input("Do you want calculator for another operation? y/n : ")
-        if option.lower()=='y':
-            user_choice()
-        else:
-            sys.exit(0)
+        option_check()
+        
     if choice==2:
         first_number=input("enter a 1st number")
         second_number=input("enter a 2nd number")
         answer=sub(first_number,second_number)
         print(f"{first_number} - {second_number} = {answer}")
-        option=input("Do you want calculator for another operation? y/n")
-        if option.lower()=='y':
-            user_choice()
-        else:
-            sys.exit(0)        
+        option_check()        
     if choice==3:
         first_number=input("enter a 1st number")
         second_number=input("enter a 2nd number")
         answer=mul(first_number,second_number)
         print(f"{first_number} * {second_number} = {answer}")
-        option=input("Do you want calculator for another operation? y/n")
-        if option.lower()=='y':
-            user_choice()
-        else:
-            sys.exit(0)
+        option_check()
     if choice==4:
         first_number=input("enter a 1st number")
         second_number=input("enter a 2nd number")
         answer=div(first_number,second_number)
         print(f"{first_number} / {second_number} = {answer}")
-        option=input("Do you want calculator for another operation? y/n")
-        if option.lower()=='y':
-            user_choice()
-        else:
-            sys.exit(0)     
+        option_check()     
     if choice==5:
         first_number=input("enter a 1st number")
         second_number=input("enter a 2nd number")
         answer=mod(first_number,second_number)
         print(f"{first_number} % {second_number} = {answer}")
-        option=input("Do you want calculator for another operation? y/n")
-        if option.lower()=='y':
-            user_choice()
-        else:
-            sys.exit(0) 
+        option_check()
     if choice==6:
         first_number=input("enter a 1st number")
         second_number=input("enter a 2nd number")
         answer=floor_division(first_number,second_number)
         print(f"{first_number} // {second_number} = {answer}")
-        option=input("Do you want calculator for another operation? y/n")
-        if option.lower()=='y':
-            user_choice()
-        else:
-            sys.exit(0)                        
+        option_check()                      
 
 user_choice()
+    
+
