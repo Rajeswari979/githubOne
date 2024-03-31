@@ -2,7 +2,7 @@
 #eg: input=Hello
 #output=olleH
 
-string="Hello"
+string="Hello rajeswari madurai"
 word=[]
 for i in string:
     word.append(i)
