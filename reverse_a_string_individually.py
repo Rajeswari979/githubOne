@@ -1,4 +1,5 @@
-#input=Python programming language
+#reverse a string using stack individually
+#example -input=Python programming language
 #output=nohtyP gnimmargorp egaugnal
 #eg -false = egaugnal gnimmargorp nohtyP
 
