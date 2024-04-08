@@ -1,3 +1,8 @@
+#remove duplicate letters in the string in given sentence
+#example input - hello ,output -helo
+#example input=python is a programming language
+#output -python is a progamin langue 
+
 sentance=input("enter the string : ")
 str=sentance.split(' ')
 removeDuplicates=""
@@ -15,5 +20,6 @@ def func(word):
          
 
 for word in str:
-   print("Letters are Removed : ",func(word))
+    result=func(word)
+    print(result,end=' ')
        
