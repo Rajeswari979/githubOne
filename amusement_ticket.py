@@ -1,17 +1,17 @@
-from datetime import date
-from datetime import datetime
+from datetime import  date
 
-today=date.today()
-
-
-#def get_details_from_user():
-user_birthday=input("Please enter your birthday (YYYY-MM-DD): ")
-birthday = datetime.strptime(user_birthday, "%Y-%m-%d").date()
-
-#print(user_birthday.year)
-print(today.year)
-print(birthday.year)
-
-age = today.year - birthday.year
-print(age)
+def calculate_Ticket_based_onage(birthdate):
+    currentdate=date.now()
+    age=currentdate.year-birthdate.year
+    if(age>=16):
+        amount=75
+    elif(age>=60 or age<=15):
+        amount=50
     
+    
+    
+def inputoftheuser():
+    
+    return
+def discountcal():
+    return

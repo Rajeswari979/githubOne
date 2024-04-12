@@ -3,7 +3,6 @@
 #get string from user
 string=input("enter the sentance : ") 
 str=string.replace(' ','')
-print(string)
 #declare a variable
 addSpace="" 
 
