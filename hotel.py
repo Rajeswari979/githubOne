@@ -1,16 +1,23 @@
 import sys
-menu=["idly","dosa","poori","vadai","pongal","parota","idiyapam","masala dosa"]
-price=[15,35,25,10,50,20,25,60]
+menu=["idly","dosa","poori","vadai","pongal","parota","idiyapam","masala dosa","chicken biriyani","chicken gravy"]
+price=[15,35,25,10,50,20,25,60,180,150]
 amount=0
 totalAmount=0
 while(True):
-  print("\n1.add a item on menu\n2.print the menu\n3.calculate the bill\n4.close\nEnter your option : ")
+  print("\n1.add a item on menu(admin only can access)\n2.print the menu\n3.calculate the bill\n4.close\nEnter your option : ")
   option=int(input())
   if option==1:
-    newDish=input("Add a dish in menu : ")
-    menu[-1]=newDish
-    newDishprice=int(input("Enter the price of the dish : "))
-    price[-1]=newDishprice
+    password=input("enter you passcode : ")
+    if password == "Rajeswari":
+      newDish=input("Add a dish in menu : ")
+      menu[-1]=newDish
+      if newDish in menu:
+        print("Sorry, item is already in menu")
+      else:
+        newDishprice=int(input("Enter the price of the dish : "))
+        price[-1]=newDishprice
+    else:
+       print("Ooops, its wrong")    
 
   elif option==2:
     print("*****MENU*****")

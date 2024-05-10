@@ -1,17 +1,27 @@
+'''
+input : choice(1,2,3)
+        4 for exit
+output : Menu        
+
+
+
+'''
 import sys
 
 while True:
     print("----------------------------------")
-    print("1.KFC \n 2.Dominos \n 3.Pure Veg hotel \n 4. exit")
+    print("\n 1.KFC \n 2.Dominos \n 3.Pure Veg hotel \n 4. exit")
     print("----------------------------------")
     print("Enter your choice :")
+    print("----------------------------------")
     choice=int(input())
     if choice==1:
-        dishes=["chicken strips","fried chicken","chicken popcorn","lava cake","french fries","fish wings"]
+        dishes=["chicken strips ","fried chicken","chicken popcorn","lava cake","french fries","fish wings"]
         price=[179,300,250,99,100,200]
-        print("             KFC            ")
+        print("           KFC            ")
         for i in range(0,len(dishes)):
             print(f"{dishes[i]} : {price[i]}")
+            
     elif choice==2:
         print("       DOMINOS        ")
         dominos_menu={
