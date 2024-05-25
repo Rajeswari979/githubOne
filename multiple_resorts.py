@@ -8,7 +8,22 @@ output : Menu
 '''
 import sys
 
+def order():
+    while True:
+        
+        print("Enter your Order : ")
+        orders=int(input())
+        quantity=int(input("Enter a quantity of an item : " ))
+        print("Do you add another item means enter the '1' otherwise enter '0'")
+        option=int(input())
+        if option==1:
+            order()
+        else:
+            return orders,quantity
+        return orders,quantity
+        
 while True:
+    
     print("----------------------------------")
     print("\n 1.KFC \n 2.Dominos \n 3.Pure Veg hotel \n 4. exit")
     print("----------------------------------")
@@ -20,7 +35,10 @@ while True:
         price=[179,300,250,99,100,200]
         print("           KFC            ")
         for i in range(0,len(dishes)):
-            print(f"{dishes[i]} : {price[i]}")
+            print(f"{dishes[i].capitalize()} : {price[i]}")
+        ordered=order()
+        print(ordered)
+
             
     elif choice==2:
         print("       DOMINOS        ")

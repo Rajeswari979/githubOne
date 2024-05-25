@@ -1,0 +1,6 @@
+file=open("trial_write.txt","w")
+print("this is loga hri")
+file.write(f"ab13:2fd:67ce:782:ffab:7896:FFFF:1235")
+# file.write("\n")
+file.write("ab13:2fod:67ce:782:ffab:7896:FFFF:1235")
+file.close()
