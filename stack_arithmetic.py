@@ -34,7 +34,7 @@ def stack_implementation(input):
     
     return stack
 
-#input=["10","2","3","+","-","5","*"]
-input=["1","2","+","5","*"]
+input=["10","2","3","+","-","5","*"]
+#input=["1","2","+","5","*"]
 stack=[] 
 print(stack_implementation(input))

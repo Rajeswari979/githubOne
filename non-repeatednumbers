@@ -1,0 +1,20 @@
+#input=[131,11,48]
+input=[111,222,333,4444,666]
+numbers=[]
+for num in input:
+    n=1
+    while(n>0):
+        n=num%10
+        num=num//10
+        numbers.append(n)
+        n=num
+
+non_repeated=[]
+for i in numbers:
+    if i in non_repeated:
+        continue
+    else:
+        non_repeated.append(i)
+
+
+print(non_repeated)
