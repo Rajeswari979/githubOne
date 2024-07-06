@@ -128,5 +128,6 @@ for a in menu:
         for r,m in items.items():
             num+=1
             print(num,r,":",m)
+            
     print("\n")
-    
+
